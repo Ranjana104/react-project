@@ -1,13 +1,115 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.input_container {
+  display: flex;
+  flex-direction: row;
+  background-color: #f7f7f7;
+  outline: 2px solid #f7f7f7;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5px;
+  width: 100%;
+}
+  .input {
+    background-color: #f7f7f7;
+    /* // height: 50px; */
+    border: 0px;
+    border-radius: 8px;
+    outline: 0px;
+    padding: 10px;
+    font-size: 14px;
+    color: #11142d;
+  }
+  .input_icon {
+    width: 15px;
+    height: 15px;
+  }
+
+.focus {
+  outline: 2px solid #1d7bdf;
+}
+.set_bg {
+  /* background-color: $buttonTextColor !important; */
+  color: #11142d !important;
+  /* // font-weight: 600; */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.button_wrapper {
+  /* // height: 56px; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  color: white;
+  background: #1b1d21;
+  /* // width: 100%; */
+  padding: 10px 20px;
+  /* // transition: 0.2s; */
+}
+.primary_button_img {
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button_text {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+}
+.button_wrapper:hover {
+  /* // background: $activeTabColor !important; */
+  /* // color: $buttonTextColor !important; */
+  cursor: pointer;
+  /* // transition: all 0.2s linear; */
+}
+.disabled {
+  background: #f7f7f7 !important;
+  color: #11142d !important;
+  height: 56px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  color: white;
+  background: #1b1d21;
+  width: 100%;
+}
+.primary_button_right_img {
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.primary_btn_icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1520px) {
+  .button_text {
+    font-size: 12px;
+  }
+  .button_wrapper {
+    padding: 13px;
+  }
+}
+.linking_content{
+  margin-top: 10px;
+  text-align: center;
 }
